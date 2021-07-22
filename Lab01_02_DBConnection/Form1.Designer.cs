@@ -51,7 +51,7 @@ namespace Lab01_DBConnection
             this.файлToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(458, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(411, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,7 +87,7 @@ namespace Lab01_DBConnection
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(67, 44);
+            this.button1.Location = new System.Drawing.Point(34, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 22);
             this.button1.TabIndex = 1;
@@ -99,7 +99,7 @@ namespace Lab01_DBConnection
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(264, 49);
+            this.label1.Location = new System.Drawing.Point(231, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 2;
@@ -108,7 +108,7 @@ namespace Lab01_DBConnection
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(67, 158);
+            this.button2.Location = new System.Drawing.Point(34, 164);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 23);
             this.button2.TabIndex = 3;
@@ -121,7 +121,7 @@ namespace Lab01_DBConnection
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(229, 79);
+            this.listView1.Location = new System.Drawing.Point(196, 85);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(180, 170);
             this.listView1.TabIndex = 4;
@@ -135,7 +135,7 @@ namespace Lab01_DBConnection
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(280, 267);
+            this.button3.Location = new System.Drawing.Point(247, 273);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(79, 23);
             this.button3.TabIndex = 5;
@@ -147,7 +147,7 @@ namespace Lab01_DBConnection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 318);
+            this.ClientSize = new System.Drawing.Size(411, 308);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button2);
