@@ -117,5 +117,16 @@ namespace Lab01_DBConnection
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OleDbCommand command = connection.CreateCommand();
+            command.CommandText = "SELECT ProductName FROM Products";
+            OleDbDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                listView1.Items.Add(reader["ProductName"].ToString());
+            }
+        }
     }
 }
