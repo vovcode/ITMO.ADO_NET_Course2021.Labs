@@ -40,6 +40,10 @@ namespace Lab03__DBCommand
             this.CityTextBox = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.sqlCommand4 = new System.Data.SqlClient.SqlCommand();
+            this.button5 = new System.Windows.Forms.Button();
+            this.CategoryNameTextBox = new System.Windows.Forms.TextBox();
+            this.OrdYearTextBox = new System.Windows.Forms.TextBox();
+            this.sqlCommand5 = new System.Data.SqlClient.SqlCommand();
             this.SuspendLayout();
             // 
             // sqlConnection1
@@ -50,7 +54,7 @@ namespace Lab03__DBCommand
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(73, 126);
+            this.button1.Location = new System.Drawing.Point(86, 138);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 23);
             this.button1.TabIndex = 0;
@@ -74,7 +78,7 @@ namespace Lab03__DBCommand
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(73, 169);
+            this.button2.Location = new System.Drawing.Point(86, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 23);
             this.button2.TabIndex = 2;
@@ -88,7 +92,7 @@ namespace Lab03__DBCommand
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(73, 212);
+            this.button3.Location = new System.Drawing.Point(86, 224);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 23);
             this.button3.TabIndex = 3;
@@ -102,7 +106,7 @@ namespace Lab03__DBCommand
             // 
             // CityTextBox
             // 
-            this.CityTextBox.Location = new System.Drawing.Point(247, 129);
+            this.CityTextBox.Location = new System.Drawing.Point(258, 133);
             this.CityTextBox.Name = "CityTextBox";
             this.CityTextBox.Size = new System.Drawing.Size(202, 20);
             this.CityTextBox.TabIndex = 4;
@@ -110,7 +114,7 @@ namespace Lab03__DBCommand
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(290, 155);
+            this.button4.Location = new System.Drawing.Point(296, 159);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(131, 23);
             this.button4.TabIndex = 5;
@@ -126,11 +130,49 @@ namespace Lab03__DBCommand
             this.sqlCommand4.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
             new System.Data.SqlClient.SqlParameter("@City", System.Data.SqlDbType.NVarChar, 15, "City")});
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(284, 240);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(159, 23);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Процедура с параметром";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // CategoryNameTextBox
+            // 
+            this.CategoryNameTextBox.Location = new System.Drawing.Point(258, 188);
+            this.CategoryNameTextBox.Name = "CategoryNameTextBox";
+            this.CategoryNameTextBox.Size = new System.Drawing.Size(202, 20);
+            this.CategoryNameTextBox.TabIndex = 7;
+            this.CategoryNameTextBox.Text = "Beverages";
+            // 
+            // OrdYearTextBox
+            // 
+            this.OrdYearTextBox.Location = new System.Drawing.Point(258, 214);
+            this.OrdYearTextBox.Name = "OrdYearTextBox";
+            this.OrdYearTextBox.Size = new System.Drawing.Size(202, 20);
+            this.OrdYearTextBox.TabIndex = 8;
+            this.OrdYearTextBox.Text = "1997";
+            // 
+            // sqlCommand5
+            // 
+            this.sqlCommand5.CommandText = "SalesByCategory";
+            this.sqlCommand5.CommandType = System.Data.CommandType.StoredProcedure;
+            this.sqlCommand5.Connection = this.sqlConnection1;
+            this.sqlCommand5.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
+            new System.Data.SqlClient.SqlParameter("@CategoryName", System.Data.SqlDbType.NVarChar),
+            new System.Data.SqlClient.SqlParameter("@OrdYear", System.Data.SqlDbType.NVarChar)});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 248);
+            this.ClientSize = new System.Drawing.Size(537, 294);
+            this.Controls.Add(this.OrdYearTextBox);
+            this.Controls.Add(this.CategoryNameTextBox);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.CityTextBox);
             this.Controls.Add(this.button3);
@@ -160,6 +202,10 @@ namespace Lab03__DBCommand
         private System.Windows.Forms.TextBox CityTextBox;
         private System.Windows.Forms.Button button4;
         private System.Data.SqlClient.SqlCommand sqlCommand4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox CategoryNameTextBox;
+        private System.Windows.Forms.TextBox OrdYearTextBox;
+        private System.Data.SqlClient.SqlCommand sqlCommand5;
     }
 }
 
