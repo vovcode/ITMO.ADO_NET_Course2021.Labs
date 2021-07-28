@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_DSConnect", "Lab03_DS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_ DBCommand", "Lab03_ DBCommand\Lab03_ DBCommand.csproj", "{607947B2-6BEE-47E5-9071-391A3740ACC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04_ DatasetDesigner", "Lab04_ DatasetDesigner\Lab04_ DatasetDesigner.csproj", "{1932D52E-8147-4CCF-89A6-7FA67208312D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{607947B2-6BEE-47E5-9071-391A3740ACC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{607947B2-6BEE-47E5-9071-391A3740ACC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{607947B2-6BEE-47E5-9071-391A3740ACC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1932D52E-8147-4CCF-89A6-7FA67208312D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1932D52E-8147-4CCF-89A6-7FA67208312D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1932D52E-8147-4CCF-89A6-7FA67208312D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1932D52E-8147-4CCF-89A6-7FA67208312D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
