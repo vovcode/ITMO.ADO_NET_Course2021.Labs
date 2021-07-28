@@ -37,6 +37,9 @@ namespace Lab03__DBCommand
             this.sqlCommand2 = new System.Data.SqlClient.SqlCommand();
             this.button3 = new System.Windows.Forms.Button();
             this.sqlCommand3 = new System.Data.SqlClient.SqlCommand();
+            this.CityTextBox = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.sqlCommand4 = new System.Data.SqlClient.SqlCommand();
             this.SuspendLayout();
             // 
             // sqlConnection1
@@ -47,9 +50,9 @@ namespace Lab03__DBCommand
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 127);
+            this.button1.Location = new System.Drawing.Point(73, 126);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 23);
+            this.button1.Size = new System.Drawing.Size(110, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Запрос данных";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,17 +65,18 @@ namespace Lab03__DBCommand
             // 
             // ResultsTextBox
             // 
-            this.ResultsTextBox.Location = new System.Drawing.Point(12, 12);
+            this.ResultsTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ResultsTextBox.Location = new System.Drawing.Point(0, 0);
             this.ResultsTextBox.Multiline = true;
             this.ResultsTextBox.Name = "ResultsTextBox";
-            this.ResultsTextBox.Size = new System.Drawing.Size(397, 103);
+            this.ResultsTextBox.Size = new System.Drawing.Size(537, 103);
             this.ResultsTextBox.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(152, 127);
+            this.button2.Location = new System.Drawing.Point(73, 169);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 23);
+            this.button2.Size = new System.Drawing.Size(110, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Вызов процедуры";
             this.button2.UseVisualStyleBackColor = true;
@@ -84,7 +88,7 @@ namespace Lab03__DBCommand
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(299, 127);
+            this.button3.Location = new System.Drawing.Point(73, 212);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 23);
             this.button3.TabIndex = 3;
@@ -96,11 +100,39 @@ namespace Lab03__DBCommand
             // 
             this.sqlCommand3.Connection = this.sqlConnection1;
             // 
+            // CityTextBox
+            // 
+            this.CityTextBox.Location = new System.Drawing.Point(247, 129);
+            this.CityTextBox.Name = "CityTextBox";
+            this.CityTextBox.Size = new System.Drawing.Size(202, 20);
+            this.CityTextBox.TabIndex = 4;
+            this.CityTextBox.Text = "London";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(290, 155);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(131, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Запрос с параметром";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // sqlCommand4
+            // 
+            this.sqlCommand4.CommandText = "SELECT        CustomerID, CompanyName, City\r\nFROM            Customers\r\nWHERE    " +
+    "    (City = @City)";
+            this.sqlCommand4.Connection = this.sqlConnection1;
+            this.sqlCommand4.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
+            new System.Data.SqlClient.SqlParameter("@City", System.Data.SqlDbType.NVarChar, 15, "City")});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 162);
+            this.ClientSize = new System.Drawing.Size(537, 248);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.CityTextBox);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ResultsTextBox);
@@ -125,6 +157,9 @@ namespace Lab03__DBCommand
         private System.Data.SqlClient.SqlCommand sqlCommand2;
         private System.Windows.Forms.Button button3;
         private System.Data.SqlClient.SqlCommand sqlCommand3;
+        private System.Windows.Forms.TextBox CityTextBox;
+        private System.Windows.Forms.Button button4;
+        private System.Data.SqlClient.SqlCommand sqlCommand4;
     }
 }
 
