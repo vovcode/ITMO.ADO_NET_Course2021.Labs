@@ -61,5 +61,28 @@ namespace Lab03__DBCommand
             sqlCommand2.Connection.Close();
             ResultsTextBox.Text = results.ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlCommand3.CommandType = CommandType.Text;
+                sqlCommand3.CommandText = "CREATE TABLE SalesPersons (" +
+                       "[SalesPersonID] [int] IDENTITY(1,1) NOT NULL, " +
+                       "[FirstName] [nvarchar](50)  NULL, " +
+                       "[LastName] [nvarchar](50)  NULL)";
+                sqlCommand3.Connection.Open();
+                sqlCommand3.ExecuteNonQuery();
+                MessageBox.Show("Таблица SalesPersons создана");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+            finally
+            {
+                sqlCommand3.Connection.Close(); 
+            }
+        }
     }
 }

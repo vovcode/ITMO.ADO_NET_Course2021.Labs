@@ -35,6 +35,8 @@ namespace Lab03__DBCommand
             this.ResultsTextBox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.sqlCommand2 = new System.Data.SqlClient.SqlCommand();
+            this.button3 = new System.Windows.Forms.Button();
+            this.sqlCommand3 = new System.Data.SqlClient.SqlCommand();
             this.SuspendLayout();
             // 
             // sqlConnection1
@@ -45,7 +47,7 @@ namespace Lab03__DBCommand
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(83, 127);
+            this.button1.Location = new System.Drawing.Point(12, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 23);
             this.button1.TabIndex = 0;
@@ -68,7 +70,7 @@ namespace Lab03__DBCommand
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(237, 127);
+            this.button2.Location = new System.Drawing.Point(152, 127);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 23);
             this.button2.TabIndex = 2;
@@ -80,11 +82,26 @@ namespace Lab03__DBCommand
             // 
             this.sqlCommand2.Connection = this.sqlConnection1;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(299, 127);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(110, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Создание таблицы";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // sqlCommand3
+            // 
+            this.sqlCommand3.Connection = this.sqlConnection1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 162);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ResultsTextBox);
             this.Controls.Add(this.button1);
@@ -106,6 +123,8 @@ namespace Lab03__DBCommand
         private System.Windows.Forms.TextBox ResultsTextBox;
         private System.Windows.Forms.Button button2;
         private System.Data.SqlClient.SqlCommand sqlCommand2;
+        private System.Windows.Forms.Button button3;
+        private System.Data.SqlClient.SqlCommand sqlCommand3;
     }
 }
 
