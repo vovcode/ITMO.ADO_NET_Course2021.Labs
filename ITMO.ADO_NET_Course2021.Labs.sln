@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04_DataBindingSimple", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04_DataBindingComplex", "Lab04_DataBindingComplex\Lab04_DataBindingComplex.csproj", "{82B787CA-439C-49A1-AC5D-E949820CB1D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04_DataGridViewExample", "Lab04_DataGridViewExample\Lab04_DataGridViewExample.csproj", "{2D9E6756-C39A-4C73-B1F2-C5B4A65F66D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05_DataGridViewExample", "Lab04_DataGridViewExample\Lab05_DataGridViewExample.csproj", "{2D9E6756-C39A-4C73-B1F2-C5B4A65F66D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
