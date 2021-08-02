@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06_SavingDataSetXml", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06_LoadDataSetXml", "Lab06_LoadDataSetXml\Lab06_LoadDataSetXml.csproj", "{A3C5105F-95F9-477D-9F09-749193303242}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07_Linq_Student", "Lab07_Linq_Student\Lab07_Linq_Student.csproj", "{027D335B-D6BE-44E9-9195-EEABD17835C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{A3C5105F-95F9-477D-9F09-749193303242}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3C5105F-95F9-477D-9F09-749193303242}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3C5105F-95F9-477D-9F09-749193303242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027D335B-D6BE-44E9-9195-EEABD17835C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027D335B-D6BE-44E9-9195-EEABD17835C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027D335B-D6BE-44E9-9195-EEABD17835C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027D335B-D6BE-44E9-9195-EEABD17835C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
