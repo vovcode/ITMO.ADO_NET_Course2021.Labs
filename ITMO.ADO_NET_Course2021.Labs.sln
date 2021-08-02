@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05_DataBindingComplex", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05_DataGridViewExample", "Lab05_DataGridViewExample\Lab05_DataGridViewExample.csproj", "{2D9E6756-C39A-4C73-B1F2-C5B4A65F66D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06_SavingDataSetXml", "Lab06_SavingDataSetXml\Lab06_SavingDataSetXml.csproj", "{73EC4D07-9018-4F26-B52F-D2A9BF5DEBDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{2D9E6756-C39A-4C73-B1F2-C5B4A65F66D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D9E6756-C39A-4C73-B1F2-C5B4A65F66D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D9E6756-C39A-4C73-B1F2-C5B4A65F66D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EC4D07-9018-4F26-B52F-D2A9BF5DEBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EC4D07-9018-4F26-B52F-D2A9BF5DEBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EC4D07-9018-4F26-B52F-D2A9BF5DEBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EC4D07-9018-4F26-B52F-D2A9BF5DEBDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
