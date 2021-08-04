@@ -48,8 +48,8 @@ namespace Lab09_CustomerManager
             this.textBoxCustomer = new System.Windows.Forms.TextBox();
             this.labelid = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.CustomerradioButton = new System.Windows.Forms.RadioButton();
             this.OrderradioButton = new System.Windows.Forms.RadioButton();
+            this.CustomerradioButton = new System.Windows.Forms.RadioButton();
             this.GridView = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
@@ -153,6 +153,7 @@ namespace Lab09_CustomerManager
             this.buttonFile.TabIndex = 11;
             this.buttonFile.Text = "Выберите файл...";
             this.buttonFile.UseVisualStyleBackColor = true;
+            this.buttonFile.Click += new System.EventHandler(this.buttonFile_Click);
             // 
             // buttonAdd
             // 
@@ -162,6 +163,7 @@ namespace Lab09_CustomerManager
             this.buttonAdd.TabIndex = 12;
             this.buttonAdd.Text = "Добавить данные";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonOut
             // 
@@ -217,17 +219,6 @@ namespace Lab09_CustomerManager
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Выбор данных";
             // 
-            // CustomerradioButton
-            // 
-            this.CustomerradioButton.AutoSize = true;
-            this.CustomerradioButton.Location = new System.Drawing.Point(34, 19);
-            this.CustomerradioButton.Name = "CustomerradioButton";
-            this.CustomerradioButton.Size = new System.Drawing.Size(74, 17);
-            this.CustomerradioButton.TabIndex = 0;
-            this.CustomerradioButton.TabStop = true;
-            this.CustomerradioButton.Text = "Customers";
-            this.CustomerradioButton.UseVisualStyleBackColor = true;
-            // 
             // OrderradioButton
             // 
             this.OrderradioButton.AutoSize = true;
@@ -238,6 +229,17 @@ namespace Lab09_CustomerManager
             this.OrderradioButton.TabStop = true;
             this.OrderradioButton.Text = "Orders";
             this.OrderradioButton.UseVisualStyleBackColor = true;
+            // 
+            // CustomerradioButton
+            // 
+            this.CustomerradioButton.AutoSize = true;
+            this.CustomerradioButton.Location = new System.Drawing.Point(34, 19);
+            this.CustomerradioButton.Name = "CustomerradioButton";
+            this.CustomerradioButton.Size = new System.Drawing.Size(74, 17);
+            this.CustomerradioButton.TabIndex = 0;
+            this.CustomerradioButton.TabStop = true;
+            this.CustomerradioButton.Text = "Customers";
+            this.CustomerradioButton.UseVisualStyleBackColor = true;
             // 
             // GridView
             // 
@@ -274,7 +276,6 @@ namespace Lab09_CustomerManager
             this.Controls.Add(this.orderlistBox);
             this.Controls.Add(this.customerList);
             this.Name = "CustomerViewer";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Viewer";
             this.TopMost = true;
             this.groupBox1.ResumeLayout(false);
