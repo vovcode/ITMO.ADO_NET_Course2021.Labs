@@ -19,6 +19,7 @@ namespace Lab09_CustomerManager
         public CustomerViewer()
         {
             InitializeComponent();
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<SampleContext>());
         }
        
 
