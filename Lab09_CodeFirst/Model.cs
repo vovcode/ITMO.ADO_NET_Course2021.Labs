@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Lab09_CodeFirst
 {
     public class Model
@@ -21,11 +22,15 @@ namespace Lab09_CodeFirst
     public class Customer
     {
         public int CustomerId { get; set; }
+        [Required]
+        [MaxLength(30)]
         public string Name { get; set; }
+        [MaxLength(100)]
         public string Email { get; set; }
+        [Range(8, 100)]
         public int Age { get; set; }
+        [Column(TypeName = "image")]
         public byte[] Photo { get; set; }
-
         public override string ToString()
         {
             string s = Name + ", электронный адрес: " + Email;

@@ -173,6 +173,7 @@ namespace Lab09_CustomerManager
             this.buttonOut.TabIndex = 13;
             this.buttonOut.Text = "Показать данные";
             this.buttonOut.UseVisualStyleBackColor = true;
+            this.buttonOut.Click += new System.EventHandler(this.buttonOut_Click);
             // 
             // buttonEdit
             // 
@@ -278,6 +279,7 @@ namespace Lab09_CustomerManager
             this.Name = "CustomerViewer";
             this.Text = "Customer Viewer";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.CustomerViewer_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).EndInit();

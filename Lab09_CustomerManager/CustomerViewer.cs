@@ -31,10 +31,12 @@ namespace Lab09_CustomerManager
                     Name = this.textBoxname.Text,
                     Email = this.textBoxmail.Text,
                     Age = Int32.Parse(this.textBoxage.Text),
-                    Photo = Ph
+                    Photo = Ph,
+                    Orders = orderlistBox.SelectedItems.OfType<Order>().ToList()
                 };
                 context.Customers.Add(customer);
                 context.SaveChanges();
+                Output();
                 textBoxname.Text = String.Empty;
                 textBoxmail.Text = String.Empty;
                 textBoxage.Text = String.Empty;
@@ -43,6 +45,7 @@ namespace Lab09_CustomerManager
             {
                 MessageBox.Show("Ошибка: " + ex.ToString());
             }
+
         }
 
         private void buttonFile_Click(object sender, EventArgs e)
@@ -55,6 +58,31 @@ namespace Lab09_CustomerManager
                 ImageConverter converter = new ImageConverter();
                 Ph = (byte[])converter.ConvertTo(bm, typeof(byte[]));
             }
+        }
+
+        private void CustomerViewer_Load(object sender, EventArgs e)
+        {
+            context = new SampleContext();
+            context.Orders.Add(new Order { ProductName = "Аудио", Quantity = 12, PurchaseDate = DateTime.Parse("12.01.2016") });
+            context.Orders.Add(new Order { ProductName = "Видео", Quantity = 22, PurchaseDate = DateTime.Parse("10.01.2016") });
+            context.SaveChanges();
+            orderlistBox.DataSource = context.Orders.ToList();
+        }
+        private void Output()
+        {
+            if (this.CustomerradioButton.Checked == true)
+                GridView.DataSource = context.Customers.ToList();
+            else if (this.OrderradioButton.Checked == true)
+                GridView.DataSource = context.Orders.ToList();
+        }
+
+        private void buttonOut_Click(object sender, EventArgs e)
+        {
+            Output();
+            var query = from b in context.Customers
+                        orderby b.FirstName
+                        select b;
+            customerList.DataSource = query.ToList();
         }
     }
 }
