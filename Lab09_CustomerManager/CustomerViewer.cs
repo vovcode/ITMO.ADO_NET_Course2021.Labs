@@ -19,7 +19,7 @@ namespace Lab09_CustomerManager
         public CustomerViewer()
         {
             InitializeComponent();
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<SampleContext>());
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<SampleContext>());
         }
        
 
@@ -29,16 +29,18 @@ namespace Lab09_CustomerManager
             {
                 Customer customer = new Customer
                 {
-                    Name = this.textBoxname.Text,
+                    FirstName = this.textBoxfirstname.Text,
+                    LastName = this.textBoxlastname.Text,
                     Email = this.textBoxmail.Text,
                     Age = Int32.Parse(this.textBoxage.Text),
-                    Photo = Ph,
-                    Orders = orderlistBox.SelectedItems.OfType<Order>().ToList()
+                    Orders = orderlistBox.SelectedItems.OfType<Order>().ToList(),
+                    Photo = Ph
                 };
                 context.Customers.Add(customer);
                 context.SaveChanges();
                 Output();
-                textBoxname.Text = String.Empty;
+                textBoxfirstname.Text = String.Empty;
+                textBoxlastname.Text = String.Empty;
                 textBoxmail.Text = String.Empty;
                 textBoxage.Text = String.Empty;
             }

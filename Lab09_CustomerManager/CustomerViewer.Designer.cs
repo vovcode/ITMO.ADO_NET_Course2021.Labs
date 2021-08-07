@@ -36,7 +36,7 @@ namespace Lab09_CustomerManager
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxname = new System.Windows.Forms.TextBox();
+            this.textBoxfirstname = new System.Windows.Forms.TextBox();
             this.textBoxlastname = new System.Windows.Forms.TextBox();
             this.textBoxmail = new System.Windows.Forms.TextBox();
             this.textBoxage = new System.Windows.Forms.TextBox();
@@ -117,12 +117,12 @@ namespace Lab09_CustomerManager
             this.label5.TabIndex = 6;
             this.label5.Text = "Фото";
             // 
-            // textBoxname
+            // textBoxfirstname
             // 
-            this.textBoxname.Location = new System.Drawing.Point(280, 15);
-            this.textBoxname.Name = "textBoxname";
-            this.textBoxname.Size = new System.Drawing.Size(100, 20);
-            this.textBoxname.TabIndex = 7;
+            this.textBoxfirstname.Location = new System.Drawing.Point(280, 15);
+            this.textBoxfirstname.Name = "textBoxfirstname";
+            this.textBoxfirstname.Size = new System.Drawing.Size(100, 20);
+            this.textBoxfirstname.TabIndex = 7;
             // 
             // textBoxlastname
             // 
@@ -268,7 +268,7 @@ namespace Lab09_CustomerManager
             this.Controls.Add(this.textBoxage);
             this.Controls.Add(this.textBoxmail);
             this.Controls.Add(this.textBoxlastname);
-            this.Controls.Add(this.textBoxname);
+            this.Controls.Add(this.textBoxfirstname);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -297,7 +297,7 @@ namespace Lab09_CustomerManager
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxname;
+        private System.Windows.Forms.TextBox textBoxfirstname;
         private System.Windows.Forms.TextBox textBoxlastname;
         private System.Windows.Forms.TextBox textBoxmail;
         private System.Windows.Forms.TextBox textBoxage;
