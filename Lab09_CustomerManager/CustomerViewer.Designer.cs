@@ -183,6 +183,7 @@ namespace Lab09_CustomerManager
             this.buttonEdit.TabIndex = 14;
             this.buttonEdit.Text = "Редактировать";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
@@ -192,6 +193,7 @@ namespace Lab09_CustomerManager
             this.buttonDel.TabIndex = 15;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // textBoxCustomer
             // 
@@ -250,6 +252,7 @@ namespace Lab09_CustomerManager
             this.GridView.Name = "GridView";
             this.GridView.Size = new System.Drawing.Size(800, 260);
             this.GridView.TabIndex = 19;
+            this.GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_CellClick);
             // 
             // CustomerViewer
             // 

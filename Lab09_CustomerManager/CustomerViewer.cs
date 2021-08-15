@@ -87,5 +87,50 @@ namespace Lab09_CustomerManager
                         select b;
             customerList.DataSource = query.ToList();
         }
+
+        private void buttonDel_Click(object sender, EventArgs e)
+        {
+            if (labelid.Text == String.Empty) return;
+
+            var id = Convert.ToInt32(labelid.Text);
+            var customer = context.Customers.Find(id);
+
+            context.Entry(customer).State = EntityState.Deleted;
+            context.SaveChanges();
+            Output();
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            if (labelid.Text == String.Empty) return;
+
+            var id = Convert.ToInt32(labelid.Text);
+            var customer = context.Customers.Find(id);
+            if (customer == null) return;
+
+            customer.FirstName = this.textBoxfirstname.Text;
+            customer.LastName = this.textBoxlastname.Text;
+            customer.Email = this.textBoxmail.Text;
+            customer.Age = Int32.Parse(this.textBoxage.Text);
+            context.Entry(customer).State = EntityState.Modified;
+
+            context.SaveChanges();
+            Output();
+
+        }
+
+        private void GridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (GridView.CurrentRow == null) return;
+            var customer = GridView.CurrentRow.DataBoundItem as Customer;
+            if (customer == null) return;
+            labelid.Text = Convert.ToString(customer.CustomerId);
+            textBoxCustomer.Text = customer.ToString();
+
+            textBoxfirstname.Text = customer.FirstName;
+            textBoxlastname.Text = customer.LastName;
+            textBoxmail.Text = customer.Email;
+            textBoxage.Text = Convert.ToString(customer.Age);
+        }
     }
 }
