@@ -48,6 +48,7 @@ namespace Lab09_CustomerManager
             this.textBoxCustomer = new System.Windows.Forms.TextBox();
             this.labelid = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ViporderradioButton = new System.Windows.Forms.RadioButton();
             this.OrderradioButton = new System.Windows.Forms.RadioButton();
             this.CustomerradioButton = new System.Windows.Forms.RadioButton();
             this.GridView = new System.Windows.Forms.DataGridView();
@@ -213,6 +214,7 @@ namespace Lab09_CustomerManager
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ViporderradioButton);
             this.groupBox1.Controls.Add(this.OrderradioButton);
             this.groupBox1.Controls.Add(this.CustomerradioButton);
             this.groupBox1.Location = new System.Drawing.Point(475, 83);
@@ -222,10 +224,21 @@ namespace Lab09_CustomerManager
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Выбор данных";
             // 
+            // ViporderradioButton
+            // 
+            this.ViporderradioButton.AutoSize = true;
+            this.ViporderradioButton.Location = new System.Drawing.Point(201, 20);
+            this.ViporderradioButton.Name = "ViporderradioButton";
+            this.ViporderradioButton.Size = new System.Drawing.Size(71, 17);
+            this.ViporderradioButton.TabIndex = 2;
+            this.ViporderradioButton.TabStop = true;
+            this.ViporderradioButton.Text = "VipOrders";
+            this.ViporderradioButton.UseVisualStyleBackColor = true;
+            // 
             // OrderradioButton
             // 
             this.OrderradioButton.AutoSize = true;
-            this.OrderradioButton.Location = new System.Drawing.Point(213, 19);
+            this.OrderradioButton.Location = new System.Drawing.Point(127, 20);
             this.OrderradioButton.Name = "OrderradioButton";
             this.OrderradioButton.Size = new System.Drawing.Size(56, 17);
             this.OrderradioButton.TabIndex = 1;
@@ -280,6 +293,7 @@ namespace Lab09_CustomerManager
             this.Controls.Add(this.orderlistBox);
             this.Controls.Add(this.customerList);
             this.Name = "CustomerViewer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Viewer";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.CustomerViewer_Load);
@@ -315,6 +329,7 @@ namespace Lab09_CustomerManager
         private System.Windows.Forms.RadioButton OrderradioButton;
         private System.Windows.Forms.RadioButton CustomerradioButton;
         private System.Windows.Forms.DataGridView GridView;
+        private System.Windows.Forms.RadioButton ViporderradioButton;
     }
 }
 

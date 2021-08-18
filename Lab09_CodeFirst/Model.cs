@@ -57,8 +57,9 @@ namespace Lab09_CodeFirst
         }
 
     }
-    //public class VipOrder : Order
-    //{
-    //    public string status { get; set; }
-    //}
+    [Table("VipOrders")]
+    public class VipOrder : Order
+    {
+        public string status { get; set; }
+    }
 }

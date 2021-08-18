@@ -19,6 +19,6 @@ namespace Lab09_CodeFirst
             modelBuilder.Entity<Customer>()
                .Property(c => c.LastName).IsRequired().HasMaxLength(30);
         }
-        //public DbSet<VipOrder> VipOrders { get; set; }
+        public DbSet<VipOrder> VipOrders { get; set; }
     }
 }
