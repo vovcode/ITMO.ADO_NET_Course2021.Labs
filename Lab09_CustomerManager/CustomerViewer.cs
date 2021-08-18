@@ -68,6 +68,7 @@ namespace Lab09_CustomerManager
             context = new SampleContext();
             context.Orders.Add(new Order { ProductName = "Аудио", Quantity = 12, PurchaseDate = DateTime.Parse("12.01.2016") });
             context.Orders.Add(new Order { ProductName = "Видео", Quantity = 22, PurchaseDate = DateTime.Parse("10.01.2016") });
+            //context.VipOrders.Add(new VipOrder { ProductName = "Авто", Quantity = 101, PurchaseDate = DateTime.Parse("10.01.2016"), status = "Высокий" });
             context.SaveChanges();
             orderlistBox.DataSource = context.Orders.ToList();
         }

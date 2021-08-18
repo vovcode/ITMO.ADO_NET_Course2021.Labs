@@ -11,17 +11,7 @@ namespace Lab09_CodeFirst
     public class Model
     {
     }
-    public class SampleContext : DbContext
-    {
-        public SampleContext() : base("MyShop") { }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Customer>()
-               .Property(c => c.LastName).IsRequired().HasMaxLength(30);
-        }
-    }
+
     public class Customer
     {
         public int CustomerId { get; set; }
@@ -67,6 +57,8 @@ namespace Lab09_CodeFirst
         }
 
     }
-
-
+    //public class VipOrder : Order
+    //{
+    //    public string status { get; set; }
+    //}
 }
