@@ -57,7 +57,7 @@ namespace Lab09_CodeFirst
         }
 
     }
-    [Table("VipOrders")]
+    [Table("VipOrders")]//Для создания отдельной таблицы с Vip заказами
     public class VipOrder : Order
     {
         public string status { get; set; }
