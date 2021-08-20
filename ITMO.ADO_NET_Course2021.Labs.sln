@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09_CustomerManager", "La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09_CodeFirst", "Lab09_CodeFirst\Lab09_CodeFirst.csproj", "{928B90DE-C973-43C9-AED5-B8C00CED2D61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09_CourseManager", "Lab09_CourseManager\Lab09_CourseManager.csproj", "{38773791-24E7-4DD5-B2DF-9252B7543066}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{928B90DE-C973-43C9-AED5-B8C00CED2D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{928B90DE-C973-43C9-AED5-B8C00CED2D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{928B90DE-C973-43C9-AED5-B8C00CED2D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38773791-24E7-4DD5-B2DF-9252B7543066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38773791-24E7-4DD5-B2DF-9252B7543066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38773791-24E7-4DD5-B2DF-9252B7543066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38773791-24E7-4DD5-B2DF-9252B7543066}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
